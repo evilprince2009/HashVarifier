@@ -74,7 +74,7 @@ namespace HashVarifier
         {
             if (!File.Exists(filename))
             {
-                throw new FileLoadException("Something unusual happened", filename);
+                throw new FileNotFoundException("Something unusual happened", filename);
             }
             else
             {
